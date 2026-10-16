@@ -2,7 +2,7 @@
 
 GitHub 팀 바이브코딩 워크숍(Orca와 gh CLI로 4~5인 협업)의 실습용 템플릿 저장소다. 빌드 도구 없이 동작하는 바닐라 HTML/CSS/JS "팀 허브" 사이트를 다섯 명이 섹션 하나씩 나누어 완성하면서 이슈, 워크트리, 에이전트, PR, 리뷰, 충돌 해결의 흐름을 익힌다.
 
-- 사이트 미리 보기: https://takjakim.github.io/vibe-team-lab/
+- 사이트 미리 보기: https://takjakim.kr/vibe-team-lab/ (GitHub Pages)
 - 학습자 안내: [docs/실습가이드.md](docs/실습가이드.md)
 
 ## 시작 상태

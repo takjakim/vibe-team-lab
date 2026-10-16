@@ -46,9 +46,9 @@ fi
 
 echo "[2/5] 저장소 설정: 병합 후 브랜치 삭제, Squash 병합, Pages"
 gh repo edit "$REPO" --delete-branch-on-merge --enable-squash-merge
-if gh api -X POST "repos/$REPO/pages" -f build_type=workflow >/dev/null 2>&1; then
+if PAGES_URL="$(gh api -X POST "repos/$REPO/pages" -f build_type=workflow -q .html_url 2>/dev/null)"; then
   gh workflow run pages.yml --repo "$REPO" >/dev/null 2>&1 || true
-  echo "  Pages를 켰습니다: https://${REPO%%/*}.github.io/$NAME/"
+  echo "  Pages를 켰습니다: $PAGES_URL"
 else
   echo "  Pages 설정을 건너뜁니다(이미 켜져 있거나 권한이 없습니다)."
 fi
