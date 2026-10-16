@@ -45,7 +45,7 @@ if ! git -C "$NAME" rev-parse --verify -q HEAD >/dev/null; then
 fi
 
 echo "[2/5] 저장소 설정: 병합 후 브랜치 삭제, Squash 병합, Pages"
-gh repo edit "$REPO" --delete-branch-on-merge --enable-squash-merge
+gh repo edit "$REPO" --delete-branch-on-merge --enable-squash-merge --enable-merge-commit=false --enable-rebase-merge=false
 if PAGES_URL="$(gh api -X POST "repos/$REPO/pages" -f build_type=workflow -q .html_url 2>/dev/null)"; then
   gh workflow run pages.yml --repo "$REPO" >/dev/null 2>&1 || true
   echo "  Pages를 켰습니다: $PAGES_URL"
