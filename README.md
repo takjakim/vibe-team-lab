@@ -4,6 +4,7 @@ GitHub 팀 바이브코딩 워크숍(Orca와 gh CLI로 4~5인 협업)의 실습�
 
 - 사이트 미리 보기: https://takjakim.kr/vibe-team-lab/ (GitHub Pages)
 - 학습자 안내: [docs/실습가이드.md](docs/실습가이드.md)
+- 완성 예시(실습 2~4를 실제로 수행한 저장소): https://github.com/takjakim/vibe-team-lab-demo — 진행 기록은 [docs/진행기록.md](https://github.com/takjakim/vibe-team-lab-demo/blob/main/docs/진행기록.md)
 
 ## 시작 상태
 

@@ -84,7 +84,7 @@ cat <<MSG
   git rebase origin/main            # team.json에서 충돌 발생
   (충돌 해결: 강사 카드와 자기 카드를 모두 남기고 표시 줄 삭제)
   node scripts/check.mjs
-  git add src/data/team.json && git rebase --continue
+  git add src/data/team.json && GIT_EDITOR=true git rebase --continue
   git push --force-with-lease
 복구가 필요하면 git rebase --abort 로 처음 상태로 돌아갑니다. 자세한 내용은 docs/충돌드릴.md를 봅니다.
 MSG
